@@ -1,6 +1,9 @@
+body{
+    background-color: rgb(22, 21, 21);
+}
 
 #banner{
-    width: 80%;
+    width: 50%;
     border-radius: 5%;
     padding: 5px;
     
@@ -10,12 +13,13 @@
 }
 
 .principal{
-    background: #CCCCCC;
+    background-color: rgb(22, 21, 21);
     padding: 30px;
 }
 
 .titulo-principal{
     padding-left: 20px;
+    color: aliceblue;
 }
 
 
@@ -25,6 +29,7 @@
 
 p {
     text-align: center;
+    color: aliceblue;
 }
 
 #missao {
@@ -40,8 +45,9 @@ em strong{
 }
 
 .beneficios{
-    background-color: #FFFF;
+    background-color: rgb(22, 21, 21);
     padding: 20px;
+    color: aliceblue;
 }
 
 ul{
