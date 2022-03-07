@@ -1,0 +1,67 @@
+header{
+    background-color: rgb(71, 69, 69);
+    padding: 20px;
+}
+
+.caixa {
+
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+    
+}
+
+#logo{
+    width: 20%;
+}
+
+nav{
+    position: absolute;
+    top: 75px;
+    right: 0px;
+
+}
+
+nav li {
+
+    display: inline;
+    margin: 0 0 0 15px;
+
+}
+nav a{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 22px;
+    color: aliceblue;
+
+}
+
+.produto {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.produto li{
+
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+}
+
+.produto h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.produto-descricao{
+    font-size: 18px;
+    
+}
+
+.produto-preco{
+    font-size: 22px;
+    font-weight: bold;
+}
