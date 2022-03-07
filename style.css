@@ -2,6 +2,7 @@ body{
     background-color: rgb(22, 21, 21);
 }
 
+
 #banner{
     width: 50%;
     border-radius: 5%;
@@ -12,13 +13,26 @@ body{
     margin-right: auto;
 }
 
+#royal{
+    width: 10%;
+    position: relative;
+    
+}
+
 .principal{
+    
     background-color: rgb(22, 21, 21);
     padding: 30px;
+    
 }
 
 .titulo-principal{
-    padding-left: 20px;
+
+    position: relative;
+    width: 940px;
+    margin: 0 250px;
+    top: 95px;
+    padding-left: 0px;
     color: aliceblue;
 }
 
@@ -59,8 +73,8 @@ ul{
 }
 
 .imagembeneficios{
-    width: 50%;
-    border-radius: 5%;
+    width: 35%;
+    border-radius: 10%;
     
     display: inline-block;
     margin-left: auto;
