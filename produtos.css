@@ -3,6 +3,17 @@ header{
     padding: 20px;
 }
 
+@property --rotate {
+    syntax: "<angle>";
+    initial-value: 132deg;
+    inherits: false;
+}
+  
+:root {
+    --card-height: 65vh;
+    --card-width: calc(var(--card-height) / 1.5);
+}
+
 .caixa {
 
     position: relative;
@@ -66,7 +77,6 @@ nav a:hover {
 }
 
 
-
 @keyframes spin {
     0% {
       --rotate: 0deg;
@@ -74,17 +84,6 @@ nav a:hover {
     100% {
       --rotate: 360deg;
     }
-  }
-
-  @property --rotate {
-    syntax: "<angle>";
-    initial-value: 132deg;
-    inherits: false;
-  }
-  
-  :root {
-    --card-height: 65vh;
-    --card-width: calc(var(--card-height) / 1.5);
   }
 
 .produto li:hover{
