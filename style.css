@@ -1,5 +1,49 @@
 body{
-    background-color: rgb(22, 21, 21);
+    background-color: aliceblue;
+}
+
+header{
+    background-color: rgb(71, 69, 69);
+    padding: 20px;
+}
+
+.caixa {
+
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+    
+}
+
+#logo{
+    width: 20%;
+}
+
+nav{
+    position: absolute;
+    top: 75px;
+    right: 0px;
+
+}
+
+nav li {
+
+    display: inline;
+    margin: 0 0 0 15px;
+
+}
+nav a{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 22px;
+    color: aliceblue;
+
+}
+
+nav a:hover {
+    color: #C78C19;
+    text-decoration: underline;
 }
 
 
@@ -13,12 +57,6 @@ body{
     margin-right: auto;
 }
 
-#royal{
-    width: 10%;
-    position: relative;
-    
-}
-
 .principal{
     
     background-color: rgb(22, 21, 21);
@@ -26,19 +64,11 @@ body{
     
 }
 
-.titulo-principal{
-
-    position: relative;
-    width: 940px;
-    margin: 0 250px;
-    top: 95px;
-    padding-left: 0px;
-    color: aliceblue;
-}
-
-
 .titulo-centralizado{
     text-align: center;
+    font-size: 30px;
+    margin: 20px;
+    color: aliceblue;
 }
 
 p {
@@ -64,7 +94,7 @@ em strong{
     color: aliceblue;
 }
 
-ul{
+.beneficios-descricao{
     display: inline-block;
     vertical-align: top;
     width: 20%;
@@ -79,4 +109,19 @@ ul{
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
+}
+
+footer {
+    text-align: center;
+    background: url("bg.jpg");
+    padding: 20px 0;
+}
+
+#logo-rodape {
+    width: 12%;
+}
+.copyright {
+    color: aliceblue;
+    font-size: 13px;
+    margin-top: 20px;
 }

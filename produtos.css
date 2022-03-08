@@ -46,10 +46,12 @@ nav a:hover {
     width: 940px;
     margin: 0 auto;
     padding: 50px 0;
+    
 }
 
 .produto li{
 
+    font-family: 'Roboto Slab', serif;
     display: inline-block;
     text-align: center;
     width: 30%;
@@ -59,10 +61,35 @@ nav a:hover {
     box-sizing: border-box;
     border: 2px solid rgb(1, 9, 15);
     border-radius: 10px;
+    background-image: linear-gradient( var(--rotate) , #5ddcff, #3c67e3 43%, #4e00c2);
+    animation: spin 2.5s linear infinite;
 }
+
+
+
+@keyframes spin {
+    0% {
+      --rotate: 0deg;
+    }
+    100% {
+      --rotate: 360deg;
+    }
+  }
+
+  @property --rotate {
+    syntax: "<angle>";
+    initial-value: 132deg;
+    inherits: false;
+  }
+  
+  :root {
+    --card-height: 65vh;
+    --card-width: calc(var(--card-height) / 1.5);
+  }
 
 .produto li:hover{
     border-color: #C78C19;
+    
 }
 
 .produto li:active{
