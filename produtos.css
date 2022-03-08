@@ -37,6 +37,11 @@ nav a{
 
 }
 
+nav a:hover {
+    color: #C78C19;
+    text-decoration: underline;
+}
+
 .produto {
     width: 940px;
     margin: 0 auto;
@@ -56,6 +61,18 @@ nav a{
     border-radius: 10px;
 }
 
+.produto li:hover{
+    border-color: #C78C19;
+}
+
+.produto li:active{
+    border-color: #088c19;
+}
+
+.produto li:hover h2 {
+    font-size: 34px;
+}
+
 .produto h2{
     font-size: 30px;
     font-weight: bold;
@@ -70,4 +87,19 @@ nav a{
     font-size: 22px;
     font-weight: bold;
     margin: 10px 0 0; 
+}
+
+footer {
+    text-align: center;
+    background: url("bg.jpg");
+    padding: 20px 0;
+}
+
+#logo-rodape {
+    width: 12%;
+}
+.copyright {
+    color: aliceblue;
+    font-size: 13px;
+    margin-top: 20px;
 }
