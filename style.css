@@ -176,3 +176,19 @@ form label, form legend {
     transform: scale(1.1) rotate(5deg);;
    
 }
+
+table {
+    margin: 20px 0 40px;
+    
+}
+
+thead{
+    background: black;
+    color: aliceblue;
+    font-weight: bold;
+}
+
+td, th {
+    border: 1px solid black;
+    padding: 10px 10px;
+}
