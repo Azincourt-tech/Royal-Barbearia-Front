@@ -1,10 +1,17 @@
-body{
-    background-color: aliceblue;
-}
-
 header{
     background-color: rgb(71, 69, 69);
     padding: 20px;
+}
+
+@property --rotate {
+    syntax: "<angle>";
+    initial-value: 132deg;
+    inherits: false;
+}
+  
+:root {
+    --card-height: 65vh;
+    --card-width: calc(var(--card-height) / 1.5);
 }
 
 .caixa {
@@ -46,69 +53,66 @@ nav a:hover {
     text-decoration: underline;
 }
 
-
-#banner{
-    width: 50%;
-    border-radius: 5%;
-    padding: 5px;
-    
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.principal{
-    
-    background-color: rgb(22, 21, 21);
-    padding: 30px;
+.produto {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
     
 }
 
-.titulo-centralizado{
-    text-align: center;
-    font-size: 30px;
-    margin: 20px;
-    color: aliceblue;
-}
+.produto li{
 
-p {
-    text-align: center;
-    color: aliceblue;
-}
-
-#missao {
-    font-size: 20px; text-align: center;
-}
-
-em strong{
-    color: #FF0000;
-}
-
-.itens {
-    font-style: italic;
-}
-
-.beneficios{
-    background-color: rgb(22, 21, 21);
-    padding: 20px;
-    color: aliceblue;
-}
-
-.beneficios-descricao{
+    font-family: 'Roboto Slab', serif;
     display: inline-block;
+    text-align: center;
+    width: 30%;
     vertical-align: top;
-    width: 20%;
-    margin-right: 15%;
-
+    margin: 0 1.5%;
+    padding: 30px  20px;
+    box-sizing: border-box;
+    border: 2px solid rgb(1, 9, 15);
+    border-radius: 10px;
+    background-image: linear-gradient( var(--rotate) , #5ddcff, #3c67e3 43%, #4e00c2);
+    animation: spin 2.5s linear infinite;
 }
 
-.imagembeneficios{
-    width: 35%;
-    border-radius: 10%;
+
+@keyframes spin {
+    0% {
+      --rotate: 0deg;
+    }
+    100% {
+      --rotate: 360deg;
+    }
+  }
+
+.produto li:hover{
+    border-color: #C78C19;
     
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
+}
+
+.produto li:active{
+    border-color: #088c19;
+}
+
+.produto li:hover h2 {
+    font-size: 34px;
+}
+
+.produto h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.produto-descricao{
+    font-size: 18px;
+    
+}
+
+.produto-preco{
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0 0; 
 }
 
 footer {
