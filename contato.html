@@ -32,16 +32,16 @@
     <main class="main">
         <form>
 
-            <label for="nomeesobrenome">Nome e Sobrenome</label>
+            <label class="descricao-input" for="nomeesobrenome">Nome e Sobrenome</label>
             <input type="text" id="nomesobrenome" class="input-padrao" required>
 
-            <label for="Email">Email</label>
+            <label class="descricao-input" for="Email">Email</label>
             <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
 
-            <label for="telefone">Telefone</label>
+            <label class="descricao-input" for="telefone">Telefone</label>
             <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
 
-            <label for="mensagem">Mensagem</label>
+            <label class="descricao-input" for="mensagem">Mensagem</label>
             <textarea cols="50" rows="10" id="mensagem" class="input-padrao" required></textarea>
 
             <fieldset>
@@ -68,7 +68,10 @@
             <label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossa novidades por
                 email?</label>
 
-            <input type="submit" value="Enviar Formulário" class="enviar">
+
+            <div>
+                <button class="custom-btn btn-3"><span>Enviar</span></button>
+            </div>
         </form>
 
         <table>
